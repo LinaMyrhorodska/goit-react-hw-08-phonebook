@@ -4,7 +4,7 @@ import { Layout } from "../Layout/Layout";
 import { ContactForm } from '../ContactForm/ContactForm';
 import { ContactList } from '../ContactList/ContactList';
 import { Filter } from "../Filter/Filter";
-import { selectIsLoading, selectError } from 'redux/selectors';
+import { selectIsLoading, selectError } from 'redux/contacts/selectors';
 import { useSelector } from 'react-redux';
 import { Loader } from "components/Loader/Loader";
 export const App = () => {
