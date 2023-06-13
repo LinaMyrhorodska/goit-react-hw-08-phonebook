@@ -1,4 +1,4 @@
-import { ContactItem, ContactName, ContactNumber, ContactBtn } from './ContactList.styled';
+import { ContactItem, ContactName, ContactNumber, ContactBtn, List } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFilteredContacts} from '../../redux/contacts/selectors';
 import { fetchContacts, deleteContact } from 'redux/contacts/operations';
@@ -17,7 +17,7 @@ export const ContactList = () => {
   };
     
   return (
-        <ul>
+        <List>
             {filteredContacts.map(contact => {
                 return (
                     <ContactItem key={contact.id}>
@@ -28,6 +28,6 @@ export const ContactList = () => {
                         </ContactBtn>
                     </ContactItem>)
             })}
-        </ul>
+        </List>
     )
 };

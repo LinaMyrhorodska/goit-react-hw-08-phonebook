@@ -16,7 +16,7 @@ export const Filter = () => {
     <>
       <FilterLabel>
         <FilterTitle>Find contacts by name</FilterTitle>
-        <FilterInput onChange={handleInputChange} value={filter} type="text" name="filter" />
+        <FilterInput onChange={handleInputChange} value={filter} type="text" name="filter" autoComplete="off"/>
       </FilterLabel>
     </>
   );

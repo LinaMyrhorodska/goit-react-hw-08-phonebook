@@ -1,11 +1,16 @@
-import { Container } from "./Layout.styled";
+import { Outlet} from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import { AppBar } from '../AppBar/AppBar';
+import { Suspense } from 'react';
 
-export const Layout = ({ children }) => { 
+export const Layout = () => {
     return (
-        <Container>
-        <header></header>
-        <main>{children}</main>
-        <footer></footer>
-        </Container>
-    )
-};
+      <div>
+        <AppBar />
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+        <Toaster position="top-right" reverseOrder={false} />
+      </div>
+    );
+  };

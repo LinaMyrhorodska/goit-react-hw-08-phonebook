@@ -10,11 +10,16 @@ export const FilterTitle = styled.p`
 `;
 
 export const FilterInput = styled.input`
-margin-top: 8px;
-margin-bottom: 12px;
+height: 24px;
+background: transparent;
+outline: none;
+border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 width: 350px;
 :focus {
     outline: none;
-    border-color: #93CDEF;
   }
 `;

@@ -13,7 +13,7 @@ ariaLabel="three-dots-loading"
             visible={true}
              wrapperStyle={{
           bottom: 0,
-    height: 60,
+    height: 34,
     left: 0,
     margin: 'auto',
     position: 'absolute',
