@@ -34,7 +34,6 @@ border: 1px solid black;
   :focus,
   :hover {
     outline: none;
-    border-color: #6b93b7;
   }
 `;
 
